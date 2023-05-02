@@ -6,7 +6,9 @@ $('#Select_SP').on('change', function() {
         data: { id: selectedOption },
         success: function(response){
             $("#Doctor_names").html(response);
-        },
+            $("#Doctor_names").removeAttr("disabled");
+            $("#wbrd").remove();
+            }
       });
 });
 $("#R_Form").submit(function(e){
@@ -17,12 +19,7 @@ $("#R_Form").submit(function(e){
             data: new FormData(this),
             success:function(res){
                 $('#processing-modal').modal('show');
-                $("#R_Form").reset();
-			} ,
-			error(err)
-                        {
-                                console.log(err);
-			} ,
+			},
 			processData : false ,
 			contentType : false ,
         })

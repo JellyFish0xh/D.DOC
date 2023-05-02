@@ -15,7 +15,7 @@ $(".Signupform").submit(function(e){
                     $(".password").append(`<h4 class="text-danger">${res}</h4>`);
                 }
                 else if (res=="Done"){
-                    window.location.href = "index.php";
+                    window.location.href = "Book.php";
                 }
 			} ,
 			processData : false ,

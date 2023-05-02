@@ -1,6 +1,6 @@
 <?php
   if(!isset($_COOKIE["name"])){
-    header("location:Login.php");
+    header("location:login.php");
   }
   include("controller/Doctor.php")
 ?>
@@ -26,14 +26,15 @@
 					<form class="login" id="R_Form">
 						<div class="login__field">
 							<i class="login__icon fas fa-user"></i>
-							<input type="text" class="login__input" placeholder="Phone Number" name = "Phone">
+							<input type="text" class="login__input" placeholder="Phone Number" name = "Phone"  value="<?=$_COOKIE["phone"] ?>" readonly>
 						</div>
 						<div class="login__field">
 							<i class="login__icon fas fa-lock"></i>
-							<input type="text" class="login__input" placeholder="Name" name="Name">
+							<input type="text" class="login__input" placeholder="Name" name="Name"  value="<?=$_COOKIE["name"]?>" readonly>
 						</div>
 						<select name="speciality" id="Select_SP" class="form-select" aria-label="Default select example">
-                  <?php
+                 		<option value="Null" id="wbrd">التخصصات</option> 
+				  <?php
                     $sp = new Doctor();
                     $data = $sp->get_sp_all();
                     while($_SP = $data->fetch_assoc()){?>
@@ -41,8 +42,8 @@
                   ?>
                   <?php } ?>
 						</select>
-						<select id="Doctor_names" class="form-select" aria-label="Default select example" name="D_name">
-
+						<select id="Doctor_names" disabled class="form-select" aria-label="Default select example" name="D_name">
+						<option value="NULL">اختار التخصص اولا</option>
 						</select>
 						<button class="button login__submit">
 							<span class="button__text">Confirm</span>

@@ -23,26 +23,11 @@
                     $sp = new Doctor();
                     $data = $sp->get_sp_all();
                     while($_SP = $data->fetch_assoc()){?>
-                      <option value="<?= $_SP['ID']?>"><?= $_SP['Name']?></option>
-                  ?>
+                      <option value="<?= $_SP['ID']?>" > <?= $_SP['Name']?> </option>
                   <?php } ?>
     </select>
       <div class="container DOC_Cards">
-        <?php $doc_data = $sp->get_all();
-        while($_y =$doc_data->fetch_assoc()){?>
-           <div class='card mb-3' style='max-width: 540px;'>
-          <div class='row g-0'>
-            <div class='col-md-4'>
-              <img width='150px' src='Images/Doctor_img/Doctor_<?=$_y["ID"]?>.png' class='img-fluid rounded-start'>
-            </div>
-            <div class='col-md-8'>
-              <div class='card-body'>
-                <h5 class='card-title'><?=$_y["name"]?></h5>
-                <p class='card-text'><?=$_y["Description"]?></p>
-              </div>
-          </div>
-      </div><hr>";
-    <?php } ?>
+
       </div>
   </section>
     

@@ -23,7 +23,8 @@ if(isset($_COOKIE["name"])){
 			<form class="login login_form">
 				<div class="login__field">
 					<i class="login__icon fas fa-user"></i>
-					<input name="p_num" type="text" class="login__input" placeholder="Phone Number">
+					<input name="p_num" type="text" class="login__input"
+					placeholder="Phone Number">
 				</div>
 				<div class="login__field">
 					<i class="login__icon fas fa-lock"></i>

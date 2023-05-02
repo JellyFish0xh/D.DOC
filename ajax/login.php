@@ -10,6 +10,7 @@
         if($rows > 0){
             if($password == $data["Password"]){
                 setcookie("name", $data["Name"], time() + (86400), "/");
+                setcookie("phone", $data["Phone"], time() + (86400), "/");
                 echo "Done";
             }
             else{

@@ -2,7 +2,13 @@
     include("../controller/Doctor.php");
     $id =$_POST["id"];
     $x = new Doctor();
-    $y = $x->get_sp_doctors($id);
+    if($id != "ALL"){
+      $y = $x->get_sp_doctors($id);
+    }
+    else
+    {
+      $y = $x->get_all();
+    }
     while($_y =$y->fetch_assoc()){
         $id = $_y["ID"];
         $name = $_y["Name"];

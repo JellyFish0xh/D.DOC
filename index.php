@@ -23,7 +23,7 @@
           <span class="secText">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam nesciunt ratione ad voluptatem maxime voluptatum dolor neque odit aperiam hic eveniet, laudantium, quam iure unde! Ducimus sed error eaque cum.
           </span>
-          <a href="doctors.php">
+          <a href="Book.php">
           <button class="book" onclick="">Book Now</button>
         </a>
       </div>
@@ -32,7 +32,7 @@
   </section>
 </div>
 <div class="sectionText" id="Service">
-  Experienced In Multiple <br> Medical Specialities
+  Experienced In Multiple <br> Medical Specialitiesdoctors.html
 </div>
 <section class="services">
   <div class="container">
@@ -60,7 +60,7 @@
         <span class="secText">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam nesciunt ratione ad voluptatem maxime voluptatum dolor neque odit aperiam hic eveniet, laudantium, quam iure unde! Ducimus sed error eaque cum.
         </span>
-        <a href="doctors.html">
+        <a href="Book.php">
           <button class="book" onclick="">Book Now</button>
         </a>
     </div>
@@ -75,7 +75,7 @@
         <span class="secText">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam nesciunt ratione ad voluptatem maxime voluptatum dolor neque odit aperiam hic eveniet, laudantium, quam iure unde! Ducimus sed error eaque cum.
         </span>
-        <a href="doctors.html">
+        <a href="Book.php">
           <button class="book" onclick="">Book Now</button>
         </a>
     </div>
